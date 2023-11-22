@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOR App</title>
     <link rel="stylesheet" href="asset/sass/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <p>Hello World</p>
-    <script src="asset/js/script.js"></script>
+    <div id="app">
+        <p>{{greetings}}</p>
+    </div>
+
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+
+    <!-- mounted app -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
 </body>
 </html>
